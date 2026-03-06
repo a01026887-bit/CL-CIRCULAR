@@ -3,7 +3,6 @@ import streamlit as st
 # --- Configuración de página ---
 st.set_page_config(
     page_title="CL Circular – Dashboard Estratégico",
-    page_icon="🎯",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -38,12 +37,12 @@ st.sidebar.markdown("### 📌 Navegación")
 seccion = st.sidebar.radio(
     label="",
     options=[
-        "Executive Summary",
-        "Market Overview",
-        "Market Players",
-        "Logistics Corridors",
-        "Cold Chain & Compliance",
-        "Strategic Insights"
+        " Executive Summary",
+        " Market Overview",
+        " Market Players",
+        " Logistics Corridors",
+        " Cold Chain & Compliance",
+        " Strategic Insights"
     ]
 )
 
