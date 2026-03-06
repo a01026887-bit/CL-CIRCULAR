@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 def show_executive():
-    st.header("📊 Executive Summary")
+    st.header("Executive Summary")
 
     # --- KPIs ---
     col1, col2, col3, col4 = st.columns(4)
@@ -36,14 +36,14 @@ def show_executive():
     """, unsafe_allow_html=True)
 
     # --- Ranking commodities ---
-    st.subheader("🏆 Top Commodities por Volumen y TAM")
+    st.subheader(" Top Commodities por Volumen y TAM")
 
     commodities = {
-        "Commodity": ["🥑 Aguacate (HS08)", "🍅 Tomate (HS07)", "🫑 Pimientos (HS07)", "🥭 Mango (HS08)", "🫐 Berries (HS08)"],
+        "Commodity": [" Aguacate (HS08)", " Tomate (HS07)", " Pimientos (HS07)", " Mango (HS08)", " Berries (HS08)"],
         "Volumen/Año": ["2.77M ton", "3M ton", "1.5M ton", "415K ton", "566K ton"],
         "Embarques": ["100K+", "150K+", "75K+", "21K+", "15K+"],
         "TAM Estimado": ["$5–15M", "$7.5–22.5M", "$3.75–11.25M", "$1.05–3.15M", "$0.75–2.25M"],
-        "Cold Chain": ["🔴 CRÍTICO", "🔴 CRÍTICO", "🔴 CRÍTICO", "🟠 ALTO", "🔴 CRÍTICO"]
+        "Cold Chain": [" CRÍTICO", " CRÍTICO", " CRÍTICO", " ALTO", " CRÍTICO"]
     }
 
     import pandas as pd

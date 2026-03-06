@@ -38,12 +38,12 @@ st.sidebar.markdown("### 📌 Navegación")
 seccion = st.sidebar.radio(
     label="",
     options=[
-        "📊 Executive Summary",
-        "📈 Market Overview",
-        "🏢 Market Players",
-        "🚚 Logistics Corridors",
-        "❄️ Cold Chain & Compliance",
-        "💡 Strategic Insights"
+        "Executive Summary",
+        "Market Overview",
+        "Market Players",
+        "Logistics Corridors",
+        "Cold Chain & Compliance",
+        "Strategic Insights"
     ]
 )
 
@@ -53,15 +53,15 @@ st.sidebar.markdown("**Capítulos:** HS06 · HS07 · HS08")
 st.sidebar.markdown("**Actualizado:** Marzo 2026")
 
 # --- Enrutador de secciones ---
-if seccion == "📊 Executive Summary":
+if seccion == " Executive Summary":
     show_executive()
-elif seccion == "📈 Market Overview":
+elif seccion == " Market Overview":
     show_market()
-elif seccion == "🏢 Market Players":
+elif seccion == " Market Players":
     show_players()
-elif seccion == "🚚 Logistics Corridors":
+elif seccion == " Logistics Corridors":
     show_corridors()
-elif seccion == "❄️ Cold Chain & Compliance":
+elif seccion == " Cold Chain & Compliance":
     show_coldchain()
-elif seccion == "💡 Strategic Insights":
+elif seccion == " Strategic Insights":
     show_insights()

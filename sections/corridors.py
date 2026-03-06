@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 def show_corridors():
-    st.header("🚚 Corredores Logísticos Críticos")
+    st.header("Corredores Logísticos Críticos")
 
     # --- Sankey diagram ---
     st.subheader("Flujo México → USA por Corredor Principal")
@@ -40,7 +40,7 @@ def show_corridors():
     st.dataframe(corredores, use_container_width=True, hide_index=True)
 
     # --- Pain points ---
-    st.subheader("⚠️ Pain Points = Oportunidades CL Circular")
+    st.subheader("Pain Points = Oportunidades CL Circular")
     risks = [
         ("1️⃣ Pérdida trazabilidad en tránsito", "12–48hrs sin visibilidad real-time temperatura en cruce", "Sensores GPS+temp con alertas y reportes auto-FSMA"),
         ("2️⃣ Congestión en cruces fronterizos", "Esperas 2–8hrs peak season → pérdida cadena fría", "Alerts congestión → rerouting automático"),
@@ -51,4 +51,4 @@ def show_corridors():
     for titulo, problema, solucion in risks:
         with st.expander(titulo):
             st.warning(f"**Problema:** {problema}")
-            st.success(f"**🎯 Solución CL Circular:** {solucion}")
+            st.success(f"** Solución CL Circular:** {solucion}")

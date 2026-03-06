@@ -2,9 +2,9 @@ import streamlit as st
 import plotly.graph_objects as go
 
 def show_insights():
-    st.header("💡 Strategic Insights")
+    st.header(" Strategic Insights")
 
-    tab1, tab2, tab3 = st.tabs(["💼 Oportunidades", "⚠️ Riesgos", "🗺️ Plan de Entrada"])
+    tab1, tab2, tab3 = st.tabs([" Oportunidades", " Riesgos", " Plan de Entrada"])
 
     with tab1:
         oportunidades = [

@@ -18,7 +18,7 @@ def show_coldchain():
     ], columns=["Commodity","Temp Crítica","Humedad Óptima","Máx sin Monitoreo","Pérdida/Embarque","FSMA"])
     st.dataframe(cc, use_container_width=True, hide_index=True)
 
-    st.error("⚠️ 66% de los commodities top requieren FSMA obligatorio. Pérdida $5–15K/embarque vs sensor $50–150 = **ROI 33–100x**")
+    st.error("66% de los commodities top requieren FSMA obligatorio. Pérdida $5–15K/embarque vs sensor $50–150 = **ROI 33–100x**")
 
     # --- Inversión cold chain ---
     st.subheader("Inversión en Cold Chain México (USD Billions)")
