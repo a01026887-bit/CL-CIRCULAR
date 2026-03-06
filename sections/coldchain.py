@@ -3,18 +3,18 @@ import pandas as pd
 import plotly.graph_objects as go
 
 def show_coldchain():
-    st.header("❄️ Cold Chain & Compliance")
+    st.header(" Cold Chain & Compliance")
 
     # --- Tabla criticidad ---
     st.subheader("Necesidades de Trazabilidad por Commodity")
 
     cc = pd.DataFrame([
-        ["🫐 Berries",  "0–2°C",   "90–95%", "<12 hrs",  "$8–12K",  "CRÍTICO"],
-        ["🌹 Flores",   "2–5°C",   "80–95%", "<24 hrs",  "$5–10K",  "RECOMENDADO"],
-        ["🥑 Aguacate", "5–7°C",   "85–90%", "24–48 hrs","$5–15K",  "CRÍTICO"],
-        ["🍅 Tomate",   "12–15°C", "90–95%", "24–48 hrs","$8–15K",  "CRÍTICO"],
-        ["🥭 Mango",    "10–13°C", "85–90%", "48–72 hrs","$6–12K",  "RECOMENDADO"],
-        ["🫑 Pimientos","7–10°C",  "90–95%", "48 hrs",   "$8–12K",  "CRÍTICO"],
+        [" Berries",  "0–2°C",   "90–95%", "<12 hrs",  "$8–12K",  "CRÍTICO"],
+        [" Flores",   "2–5°C",   "80–95%", "<24 hrs",  "$5–10K",  "RECOMENDADO"],
+        [" Aguacate", "5–7°C",   "85–90%", "24–48 hrs","$5–15K",  "CRÍTICO"],
+        [" Tomate",   "12–15°C", "90–95%", "24–48 hrs","$8–15K",  "CRÍTICO"],
+        [" Mango",    "10–13°C", "85–90%", "48–72 hrs","$6–12K",  "RECOMENDADO"],
+        [" Pimientos","7–10°C",  "90–95%", "48 hrs",   "$8–12K",  "CRÍTICO"],
     ], columns=["Commodity","Temp Crítica","Humedad Óptima","Máx sin Monitoreo","Pérdida/Embarque","FSMA"])
     st.dataframe(cc, use_container_width=True, hide_index=True)
 
