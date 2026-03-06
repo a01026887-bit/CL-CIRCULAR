@@ -56,7 +56,7 @@ def show_insights():
               "Pilotos tomate: CAADES greenhouse, Sinaloa→Nogales",
               "ERP Integration: API Sysco/US Foods, enterprise pricing"],
              "50–70 clientes · 40–60K embarques · $2.5–4M revenue"),
-        ]
+        ] 
         for titulo, color, acciones, kpi in fases:
             st.markdown(f"""
             <div style="background: linear-gradient(135deg, {color}dd, {color});
