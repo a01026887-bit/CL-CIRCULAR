@@ -1,9 +1,7 @@
 [theme]
-primaryColor = "#38bdf8"
-backgroundColor = "#f8fafc"
-secondaryBackgroundColor = "#1e293b"
-textColor = "#0f172a"
+base = "light"
+primaryColor = "#0F766E"          # Verde teal para acentos
+backgroundColor = "#F5F5F7"       # Fondo gris muy claro
+secondaryBackgroundColor = "#FFFFFF"  # Tarjetas y sidebar
+textColor = "#111827"             # Gris muy oscuro
 font = "sans serif"
-
-[server]
-headless = true
