@@ -7,17 +7,44 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- Estilos globales (sidebar + layout) ---
+# >>> PEGA AQUÍ ESTE BLOQUE <<<
+
 st.markdown(
     """
     <style>
-    /* Sidebar más claro y legible */
+    /* Reducir ancho del sidebar y hacerlo tipo tarjeta flotante */
     section[data-testid="stSidebar"] {
-        background-color: #F3F4F6 !important;
-        color: #111827 !important;
+        background-color: transparent !important;
     }
+
+    /* Contenedor interno del sidebar */
+    section[data-testid="stSidebar"] > div {
+        background-color: #F9FAFB !important;
+        border-radius: 16px;
+        margin: 1.5rem 0.75rem;
+        padding: 1.25rem 1rem 1.5rem 1rem;
+        border: 1px solid #E5E7EB;
+        box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+    }
+
+    /* Texto del sidebar */
     section[data-testid="stSidebar"] * {
         color: #111827 !important;
+        font-size: 0.90rem;
+    }
+
+    /* Título "Navegación" un poco más sobrio */
+    section[data-testid="stSidebar"] h3 {
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #6B7280 !important;
+    }
+
+    /* Radio buttons más compactos */
+    div[role="radiogroup"] > label {
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
     }
 
     /* Contenedor principal con menos padding lateral */
