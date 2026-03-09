@@ -72,7 +72,7 @@ st.markdown(
     """
     <div style="background: linear-gradient(135deg, #0f172a, #1e293b);
                 padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem;">
-        <h1 style="color: #38bdf8; margin: 0;">Dashboard Estratégico CL Circular</h1>
+        <h1 style="color: #38bdf8; margin: 0;">Estrategia de Expansión - CL Circular</h1>
         <p style="color: #94a3b8; margin: 0.5rem 0 0 0;">
             Análisis de Inteligencia de Negocios · Expansión México → USA · HS06/07/08
         </p>
