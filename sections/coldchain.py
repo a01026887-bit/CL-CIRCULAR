@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 def show_coldchain():
-    st.header(" Cold Chain & Compliance")
+    st.header(" Cadena Fría y Cumplimiento")
 
     # --- Tabla criticidad ---
     st.subheader("Necesidades de Trazabilidad por Commodity")
