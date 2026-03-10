@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore")
 
 CATEGORIAS = {
     "Frutas":   {"sheet": "Frutas",  "order": (11, 1, 8),  "color": "#4ADE80", "mape": 8.89,  "mae": 55744310,  "rmse": 66517110},
-    "Verduras": {"sheet": "Verdura", "order": (7,  1, 7),  "color": "#38BDF8", "mape": 21.52, "mae": 140022500, "rmse": 149741500},
+   "Verduras": {"sheet": "Verduras", "order": (7,  1, 7),  "color": "#38BDF8", "mape": 21.52, "mae": 140022500, "rmse": 149741500},
     "Flores":   {"sheet": "Flores",  "order": (10, 1, 11), "color": "#F472B6", "mape": 11.68, "mae": 880264,    "rmse": 924303},
     "Total":    {"sheet": None,      "order": (12, 1, 1),  "color": "#FBBF24", "mape": 16.86, "mae": 224940500, "rmse": 247287700},
 }
