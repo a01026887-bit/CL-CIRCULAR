@@ -20,7 +20,8 @@ def show_market():
     )
     st.plotly_chart(fig_pie, use_container_width=True)
 
-   # --- Estacionalidad HS08 ---
+  
+ # --- Estacionalidad HS08 ---
 st.subheader("Estacionalidad Proyectada 2026 (HS08 – Frutas)")
 
 meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
