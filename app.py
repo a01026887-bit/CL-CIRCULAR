@@ -82,12 +82,15 @@ st.markdown(
 )
 
 # --- Navegación en Sidebar ---
+# Logo CL Circular en la parte superior del sidebar
 st.sidebar.image(
-    "https://via.placeholder.com/200x60/0f172a/38bdf8?text=CL+Circular",
+    "logo_cl_circular.png",
     use_column_width=True
 )
+
 st.sidebar.markdown("---")
-st.sidebar.markdown("### Navegación")
+st.sidebar.markdown("### NAVEGACIÓN")
+
 
 seccion = st.sidebar.radio(
     label="",
