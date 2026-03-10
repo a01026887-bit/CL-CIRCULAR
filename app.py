@@ -127,3 +127,8 @@ elif seccion == " Corredores Logísticos":
 elif seccion == " Cadena Fría y Cumplimiento":
     show_coldchain()
 
+# TIME SERIES
+from sections.timeseries import show_timeseries
+" Pronóstico Series de Tiempo",
+elif seccion == " Pronóstico Series de Tiempo":
+    show_timeseries()
