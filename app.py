@@ -82,10 +82,14 @@ st.markdown(
 )
 
 # --- Navegación en Sidebar ---
-# Logo CL Circular en la parte superior del sidebar
-st.sidebar.image(
-    "logo_cl_circular.png",
-    width=200   # prueba 100–140 hasta que te guste
+# Logo CL Circular centrado en la parte superior del sidebar
+st.sidebar.markdown(
+    """
+    <div style="text-align: center; margin-bottom: 0.75rem;">
+        <img src="logo_cl_circular.png" style="width: 200px;">
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
 
 st.sidebar.markdown("---")
