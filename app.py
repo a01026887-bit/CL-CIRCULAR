@@ -67,35 +67,42 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header con texto + imagen ---
+# --- Header con texto ---
 st.markdown(
     """
-    <div style="margin-bottom: 1.5rem;">
-        <div style="margin-bottom: 0.75rem;">
-            <h1 style="color: #0f172a; margin: 0; font-size: 2.1rem;">
-                Dashboard Estratégico CL Circular
-            </h1>
-            <p style="color: #4b5563; margin: 0.25rem 0 0 0; font-size: 0.98rem;">
-                Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
-            </p>
-        </div>
-        <img src="ss.jpg"
-             style="width: 100%; max-width: 1100px; border-radius: 16px; display: block; margin: 0.5rem auto 0 auto;">
+    <div style="margin-bottom: 0.75rem;">
+        <h1 style="color: #0f172a; margin: 0; font-size: 2.1rem;">
+            Dashboard Estratégico CL Circular
+        </h1>
+        <p style="color: #4b5563; margin: 0.25rem 0 0 0; font-size: 0.98rem;">
+            Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
+        </p>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
-# --- Navegación en Sidebar ---
-# Logo centrado en el sidebar
-st.sidebar.markdown(
-    """
-    <div style="text-align: center; margin-bottom: 0.75rem;">
-        <img src="logo_cl_circular.png" style="width: 130px;">
-    </div>
-    """,
-    unsafe_allow_html=True,
+# Imagen de header centrada usando st.image
+header_img = Image.open("ss.jpg")
+st.image(
+    header_img,
+    use_column_width=True,
 )
+
+
+# --- Navegación en Sidebar ---
+from PIL import Image
+
+logo = Image.open("logo_cl_circular.png")
+
+st.sidebar.image(
+    logo,
+    use_column_width=False,
+    width=130,
+)
+st.sidebar.markdown("---")
+st.sidebar.markdown("### NAVEGACIÓN")
+
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
