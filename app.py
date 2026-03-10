@@ -84,9 +84,9 @@ with col_banner:
     st.markdown(
         """
         <div style="
-            margin-top: -120px;
+            margin-top: -60px;
             margin-bottom: 60px;
-            padding: 24px 10px;
+            padding: 24px 40px;
             background: linear-gradient(90deg, rgba(15,23,42,0.85), rgba(15,23,42,0.35));
             border-bottom-left-radius: 18px;
             border-bottom-right-radius: 18px;
