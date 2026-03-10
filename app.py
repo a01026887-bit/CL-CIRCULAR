@@ -87,7 +87,6 @@ st.markdown(
 )
 
 # --- Navegación en Sidebar ---
-# Logo CL Circular centrado en la parte superior del sidebar
 # Logo centrado en el sidebar
 st.sidebar.markdown(
     """
@@ -100,6 +99,7 @@ st.sidebar.markdown(
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
+
 
 seccion = st.sidebar.radio(
     label="",
