@@ -67,15 +67,20 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header ---
+# --- Header con texto + imagen ---
 st.markdown(
     """
-    <div style="background: linear-gradient(135deg, #0f172a, #1e293b);
-                padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem;">
-        <h1 style="color: #38bdf8; margin: 0;">Dashboard Estratégico CL Circular</h1>
-        <p style="color: #94a3b8; margin: 0.5rem 0 0 0;">
-            Análisis de Expansión y Estrategia de Entrada · México → USA · Frutas/Flores/Verduras
-        </p>
+    <div style="margin-bottom: 1.5rem;">
+        <div style="margin-bottom: 0.75rem;">
+            <h1 style="color: #0f172a; margin: 0; font-size: 2.1rem;">
+                Dashboard Estratégico CL Circular
+            </h1>
+            <p style="color: #4b5563; margin: 0.25rem 0 0 0; font-size: 0.98rem;">
+                Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
+            </p>
+        </div>
+        <img src="ss.jpg"
+             style="width: 100%; max-width: 1100px; border-radius: 16px; display: block; margin: 0.5rem auto 0 auto;">
     </div>
     """,
     unsafe_allow_html=True,
