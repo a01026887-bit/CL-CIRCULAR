@@ -70,20 +70,49 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header con texto ---
+# --- Header con imagen de fondo y texto ---
 st.markdown(
     """
-    <div style="margin-bottom: 0.75rem;">
-        <h1 style="color: #0f172a; margin: 0; font-size: 2.1rem;">
-            Dashboard Estratégico CL Circular
-        </h1>
-        <p style="color: #4b5563; margin: 0.25rem 0 0 0; font-size: 0.98rem;">
-            Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
-        </p>
+    <div style="
+        position: relative;
+        margin-bottom: 1.5rem;
+        border-radius: 18px;
+        overflow: hidden;
+        height: 220px;
+    ">
+        <!-- Imagen de fondo -->
+        <img src="ss.jpg"
+             style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+             ">
+        <!-- Capa oscura para mejorar contraste -->
+        <div style="
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(15,23,42,0.78), rgba(15,23,42,0.20));
+        "></div>
+        <!-- Texto sobre la imagen -->
+        <div style="
+            position: absolute;
+            top: 32px;
+            left: 40px;
+            color: #F9FAFB;
+        ">
+            <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px;">
+                CL Circular — Dashboard Estratégico
+            </div>
+            <div style="font-size: 0.95rem; color: #BBF7D0; font-weight: 500;">
+                Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
+            </div>
+        </div>
     </div>
     """,
     unsafe_allow_html=True,
 )
+
 
 # Imagen de header centrada usando st.image
 header_img = Image.open("ss.jpg")
