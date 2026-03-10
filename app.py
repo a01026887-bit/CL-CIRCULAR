@@ -84,14 +84,15 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True,
-) 
+)
 
 # --- Navegación en Sidebar ---
 # Logo CL Circular centrado en la parte superior del sidebar
+# Logo centrado en el sidebar
 st.sidebar.markdown(
     """
     <div style="text-align: center; margin-bottom: 0.75rem;">
-        <img src="logo_cl_circular.png" style="width: 200px;">
+        <img src="logo_cl_circular.png" style="width: 130px;">
     </div>
     """,
     unsafe_allow_html=True,
