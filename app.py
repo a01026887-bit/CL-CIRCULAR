@@ -78,7 +78,7 @@ st.markdown(
         margin-bottom: 1.5rem;
     ">
         <h1 style="color: #E5F2FF; margin: 0;">
-            CL Circular — Dashboard Estratégico
+            Dashboard Estratégico - CL Circular
         </h1>
         <p style="color: #BFDBFE; margin: 0.5rem 0 0 0;">
             Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
