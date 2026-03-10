@@ -15,6 +15,7 @@ def show_executive():
     col6.metric("Crecimiento 2015–2025", "+34%", "HS08")
 
     st.markdown("---")
+    st.caption("Datos basados en UN Comtrade · USDA · CANACAR · Marzo 2026")
 
     # --- Recomendación Estratégica ---
     st.markdown("""

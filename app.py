@@ -116,6 +116,7 @@ seccion = st.sidebar.radio(
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Mercado:** México → USA")
 st.sidebar.markdown("**Actualizado:** Marzo 2026")
+st.sidebar.caption("6 secciones · Datos 2015–2026") 
 
 # --- Enrutador ---
 if seccion == "Resumen Ejecutivo":
