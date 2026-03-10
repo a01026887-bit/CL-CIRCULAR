@@ -28,7 +28,7 @@ def show_executive():
             <li><b>Geografía focalizada:</b> Michoacán/Jalisco → Laredo/Nogales</li>
             <li><b>Timing:</b> Pico Q1 (ene–abr) = 85% embarques anuales</li>
         </ul>
-        <p><b>Meta Año 1:</b> 1,500–2,000 sensores · 5–10% penetración aguacate · Revenue $750K–$1.5M USD</p>
+        <p><b>Meta Ideal Año 1:</b> 1,500–2,000 sensores · 5–10% penetración aguacate · Revenue $750K–$1.5M USD</p>
     </div>
     """, unsafe_allow_html=True)
 
