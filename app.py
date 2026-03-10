@@ -114,13 +114,6 @@ st.markdown(
 )
 
 
-# Imagen de header centrada usando st.image
-header_img = Image.open("ss.jpg")
-st.image(
-    header_img,
-    use_column_width=True,
-)
-
 
 # --- Navegación en Sidebar ---
 from PIL import Image
