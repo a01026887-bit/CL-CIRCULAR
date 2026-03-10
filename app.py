@@ -70,38 +70,51 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header: imagen banner + texto ---
-banner = Image.open("ss.jpg")
-
-# Contenedor ancho
-col_banner = st.container()
-with col_banner:
-    st.image(
-        banner,
-        use_column_width=True,
-    )
-    # Texto encima, simulando overlay con fondo semitransparente
-    st.markdown(
-        """
+# --- Header tipo banner horizontal ---
+st.markdown(
+    """
+    <div style="
+        position: relative;
+        margin-bottom: 1.5rem;
+        border-radius: 18px;
+        overflow: hidden;
+        height: 170px;
+    ">
+        <img src="ss.jpg"
+             style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+             ">
         <div style="
-            margin-top: -120px;
-            margin-bottom: 60px;
-            padding: 24px 40px;
-            background: linear-gradient(90deg, rgba(15,23,42,0.85), rgba(15,23,42,0.35));
-            border-bottom-left-radius: 18px;
-            border-bottom-right-radius: 18px;
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                90deg,
+                rgba(15, 23, 42, 0.90),
+                rgba(15, 23, 42, 0.40),
+                rgba(15, 23, 42, 0.05)
+            );
+        "></div>
+        <div style="
+            position: absolute;
+            top: 32px;
+            left: 40px;
             color: #F9FAFB;
         ">
-            <div style="font-size: 1.25rem; font-weight: 650; margin-bottom: 8px;">
+            <div style="font-size: 1.15rem; font-weight: 650; margin-bottom: 6px;">
                 CL Circular — Dashboard Estratégico
             </div>
-            <div style="font-size: 1rem; color: #BBF7D0; font-weight: 500;">
+            <div style="font-size: 0.95rem; color: #BBF7D0; font-weight: 500;">
                 Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
             </div>
         </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 
 
