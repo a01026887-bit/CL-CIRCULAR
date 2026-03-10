@@ -72,9 +72,9 @@ st.markdown(
     """
     <div style="background: linear-gradient(135deg, #0f172a, #1e293b);
                 padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem;">
-        <h1 style="color: #38bdf8; margin: 0;">Estrategia - CL Circular</h1>
+        <h1 style="color: #38bdf8; margin: 0;">Dashboard Estratégico CL Circular</h1>
         <p style="color: #94a3b8; margin: 0.5rem 0 0 0;">
-            Análisis de Expansión · México → USA · Frutas/Flores/Verduras
+            Análisis de Expansión y Estrategia de Entrada · México → USA · Frutas/Flores/Verduras
         </p>
     </div>
     """,
@@ -85,12 +85,11 @@ st.markdown(
 # Logo CL Circular en la parte superior del sidebar
 st.sidebar.image(
     "logo_cl_circular.png",
-    use_column_width=True
+    width=120   # prueba 100–140 hasta que te guste
 )
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
-
 
 seccion = st.sidebar.radio(
     label="",
