@@ -74,7 +74,7 @@ st.markdown(
                 padding: 2rem; border-radius: 12px; margin-bottom: 1.5rem;">
         <h1 style="color: #38bdf8; margin: 0;">Estrategia - CL Circular</h1>
         <p style="color: #94a3b8; margin: 0.5rem 0 0 0;">
-            Análisis de Expansión México → USA · Frutas/Flores/Verduras
+            Análisis de Expansión · México → USA · Frutas/Flores/Verduras
         </p>
     </div>
     """,
@@ -97,7 +97,6 @@ seccion = st.sidebar.radio(
         " Market Players",
         " Logistics Corridors",
         " Cold Chain & Compliance",
-        " Strategic Insights",
     ],
 )
 
@@ -116,5 +115,3 @@ elif seccion == " Logistics Corridors":
     show_corridors()
 elif seccion == " Cold Chain & Compliance":
     show_coldchain()
-elif seccion == " Strategic Insights":
-    show_insights()
