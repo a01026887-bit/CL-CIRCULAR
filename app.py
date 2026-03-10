@@ -65,7 +65,7 @@ from sections.market_overview import show_market
 from sections.market_players import show_players
 from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
-from sections.insights import show_insights
+
 
 # --- Header ---
 st.markdown(
