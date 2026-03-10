@@ -72,7 +72,7 @@ from sections.coldchain import show_coldchain
 st.markdown(
     """
     <div style="
-        background: linear-gradient(90deg, #0f172a, #1d4ed8);
+        background: linear-gradient(90deg, #031A49, #2796B7);
         padding: 2rem;
         border-radius: 18px;
         margin-bottom: 1.5rem;
