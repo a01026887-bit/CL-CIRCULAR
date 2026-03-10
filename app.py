@@ -84,7 +84,7 @@ st.markdown(
     </div>
     """,
     unsafe_allow_html=True,
-)
+) 
 
 # --- Navegación en Sidebar ---
 # Logo CL Circular centrado en la parte superior del sidebar
