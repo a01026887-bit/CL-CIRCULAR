@@ -69,38 +69,26 @@ from sections.market_players import show_players
 from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
-# --- Header final: foto de fondo + degradado + texto ---
+# --- Header con gradiente azul oscuro ---
 st.markdown(
     """
     <div style="
-        position: relative;
-        margin-bottom: 1.5rem;
+        background: linear-gradient(135deg, #0f172a, #1e293b);
+        padding: 2rem;
         border-radius: 18px;
-        overflow: hidden;
-        height: 170px;
-        background-image:
-            linear-gradient(90deg, rgba(15,23,42,0.92), rgba(15,23,42,0.35), rgba(15,23,42,0.05)),
-            url('ss.jpg');
-        background-size: cover;
-        background-position: center;
+        margin-bottom: 1.5rem;
     ">
-        <div style="
-            position: absolute;
-            top: 32px;
-            left: 40px;
-            color: #F9FAFB;
-        ">
-            <div style="font-size: 1.15rem; font-weight: 650; margin-bottom: 6px;">
-                CL Circular — Dashboard Estratégico
-            </div>
-            <div style="font-size: 0.95rem; color: #BBF7D0; font-weight: 500;">
-                Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
-            </div>
-        </div>
+        <h1 style="color: #38bdf8; margin: 0;">
+            Dashboard Estratégico CL Circular
+        </h1>
+        <p style="color: #94a3b8; margin: 0.5rem 0 0 0;">
+            Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
+        </p>
     </div>
     """,
     unsafe_allow_html=True,
 )
+
 
 
 
