@@ -84,7 +84,7 @@ with col_banner:
     st.markdown(
         """
         <div style="
-            margin-top: 120px;
+            margin-top: -120px;
             margin-bottom: 60px;
             padding: 24px 40px;
             background: linear-gradient(90deg, rgba(15,23,42,0.85), rgba(15,23,42,0.35));
@@ -102,6 +102,7 @@ with col_banner:
         """,
         unsafe_allow_html=True,
     )
+
 
 
 # --- Navegación en Sidebar ---
