@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-
+from sections.timeseries import show_timeseries
 import streamlit as st
 
 # --- Configuración de página ---
@@ -108,6 +108,7 @@ seccion = st.sidebar.radio(
         " Actores Clave",
         " Corredores Logísticos",
         " Cadena Fría y Cumplimiento",
+        " Pronóstico Series de Tiempo",
     ],
 )
 
@@ -126,9 +127,5 @@ elif seccion == " Corredores Logísticos":
     show_corridors()
 elif seccion == " Cadena Fría y Cumplimiento":
     show_coldchain()
-
-# TIME SERIES
-from sections.timeseries import show_timeseries
-" Pronóstico Series de Tiempo",
-elif seccion == " Pronóstico Series de Tiempo":
+elif seccion == " Pronostico Series de Tiempo":
     show_timeseries()
