@@ -85,7 +85,7 @@ st.markdown(
 # Logo CL Circular en la parte superior del sidebar
 st.sidebar.image(
     "logo_cl_circular.png",
-    width=120   # prueba 100–140 hasta que te guste
+    width=200   # prueba 100–140 hasta que te guste
 )
 
 st.sidebar.markdown("---")
