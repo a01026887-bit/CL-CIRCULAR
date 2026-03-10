@@ -8,12 +8,11 @@ def show_executive():
     col1, col2, col3, col4 = st.columns(4)
     col1.metric("Volumen Total Mercado", "$28–30B USD", "2025")
     col2.metric("Embarques Estimados", "~450K", "cargas/año")
-    col3.metric("TAM CL Circular", "$23–70M USD", "potencial/año")
-    col4.metric("Concentración Geográfica", "75%", "3 cruces frontera")
+    col3.metric("Concentración Geográfica", "75%", "3 cruces frontera")
 
     col5, col6 = st.columns(2)
     col5.metric("Mejor Predictibilidad", "8.89% MAPE", "HS08 Frutas")
-    col6.metric("Crecimiento 2015–2025", "+300%", "HS08")
+    col6.metric("Crecimiento 2015–2025", "+34%", "HS08")
 
     st.markdown("---")
 
