@@ -10,7 +10,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# >>> PEGA AQUÍ ESTE BLOQUE <<<
 
 st.markdown(
     """
@@ -89,12 +88,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
-
-
-
-
-
 # --- Navegación en Sidebar ---
 from PIL import Image
 
@@ -107,15 +100,14 @@ st.sidebar.image(
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
 
-
 seccion = st.sidebar.radio(
     label="",
     options=[
-        " Executive Summary",
-        " Market Overview",
-        " Market Players",
-        " Logistics Corridors",
-        " Cold Chain & Compliance",
+        " Resumen Ejecutivo",
+        " Panorama de Mercado",
+        " Actores Clave",
+        " Corredores Logísticos",
+        " Cadena Fría y Cumplimiento",
     ],
 )
 
@@ -124,13 +116,14 @@ st.sidebar.markdown("**Mercado:** México → USA")
 st.sidebar.markdown("**Actualizado:** Marzo 2026")
 
 # --- Enrutador de secciones ---
-if seccion == " Executive Summary":
+if seccion == " Resumen Ejecutivo":
     show_executive()
-elif seccion == " Market Overview":
+elif seccion == " Panorama de Mercado":
     show_market()
-elif seccion == " Market Players":
+elif seccion == " Actores Clave":
     show_players()
-elif seccion == " Logistics Corridors":
+elif seccion == " Corredores Logísticos":
     show_corridors()
-elif seccion == " Cold Chain & Compliance":
+elif seccion == " Cadena Fría y Cumplimiento":
     show_coldchain()
+

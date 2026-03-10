@@ -2,7 +2,7 @@ import streamlit as st
 import plotly.graph_objects as go
 
 def show_executive():
-    st.header("Executive Summary")
+    st.header("Resumen Ejecutivo")
 
     # --- KPIs ---
     col1, col2, col3, col4 = st.columns(4)

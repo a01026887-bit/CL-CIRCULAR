@@ -3,7 +3,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 
 def show_market():
-    st.header(" Market Overview")
+    st.header(" Panorama de Mercado")
 
     # --- Distribución por capítulo HS ---
     st.subheader("Distribución del Mercado por Capítulo HS (2025)")

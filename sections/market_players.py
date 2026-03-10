@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 def show_players():
-    st.header("Market Players")
+    st.header("Actores Clave")
 
     # --- Dataset ---
     data = [
