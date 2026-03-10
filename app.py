@@ -70,7 +70,7 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header con imagen de fondo y texto ---
+# --- Header con imagen de fondo real + overlay y texto ---
 st.markdown(
     """
     <div style="
@@ -79,32 +79,29 @@ st.markdown(
         border-radius: 18px;
         overflow: hidden;
         height: 220px;
+        background-image: url('ss.jpg');
+        background-size: cover;
+        background-position: center;
     ">
-        <!-- Imagen de fondo -->
-        <img src="ss.jpg"
-             style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-             ">
-        <!-- Capa oscura para mejorar contraste -->
+        <!-- Capa oscura degradada para contraste -->
         <div style="
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(15,23,42,0.78), rgba(15,23,42,0.20));
+            background: linear-gradient(90deg, rgba(15,23,42,0.88), rgba(15,23,42,0.35), rgba(15,23,42,0.05));
         "></div>
+
         <!-- Texto sobre la imagen -->
         <div style="
             position: absolute;
-            top: 32px;
+            top: 36px;
             left: 40px;
+            right: 40px;
             color: #F9FAFB;
         ">
-            <div style="font-size: 1.1rem; font-weight: 600; margin-bottom: 6px;">
+            <div style="font-size: 1.25rem; font-weight: 650; margin-bottom: 8px;">
                 CL Circular — Dashboard Estratégico
             </div>
-            <div style="font-size: 0.95rem; color: #BBF7D0; font-weight: 500;">
+            <div style="font-size: 1rem; color: #BBF7D0; font-weight: 500;">
                 Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
             </div>
         </div>
