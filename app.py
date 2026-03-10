@@ -69,8 +69,7 @@ from sections.market_players import show_players
 from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
-
-# --- Header tipo banner horizontal ---
+# --- Header final: foto de fondo + degradado + texto ---
 st.markdown(
     """
     <div style="
@@ -79,24 +78,12 @@ st.markdown(
         border-radius: 18px;
         overflow: hidden;
         height: 170px;
+        background-image:
+            linear-gradient(90deg, rgba(15,23,42,0.92), rgba(15,23,42,0.35), rgba(15,23,42,0.05)),
+            url('ss.jpg');
+        background-size: cover;
+        background-position: center;
     ">
-        <img src="ss.jpg"
-             style="
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                display: block;
-             ">
-        <div style="
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                90deg,
-                rgba(15, 23, 42, 0.90),
-                rgba(15, 23, 42, 0.40),
-                rgba(15, 23, 42, 0.05)
-            );
-        "></div>
         <div style="
             position: absolute;
             top: 32px;
