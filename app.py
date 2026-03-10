@@ -94,6 +94,7 @@ st.markdown(
 
 
 
+
 # --- Navegación en Sidebar ---
 from PIL import Image
 
