@@ -22,31 +22,33 @@ def show_market():
     st.plotly_chart(fig_pie, use_container_width=True)
 
     # --- Estacionalidad HS08 ---
-st.subheader("Estacionalidad Proyectada 2026 (HS08 – Frutas)")
+    st.subheader("Estacionalidad Proyectada 2026 (HS08 – Frutas)")
 
-meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
-valores = [1.7, 1.6, 1.55, 1.5, 1.4, 1.35, 1.3, 1.3, 1.45, 1.5, 1.55, 1.6]
+    meses = ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"]
+    valores = [1.7, 1.6, 1.55, 1.5, 1.4, 1.35, 1.3, 1.3, 1.45, 1.5, 1.55, 1.6]
 
-def color_por_valor(v):
-    if v >= 1.6:
-        return "#022A6F"   # azul oscuro — temporada alta
-    elif v >= 1.5:
-        return "#2796B7"   # azul medio — temporada media-alta
-    elif v >= 1.4:
-        return "#629D3E"   # verde — temporada media-baja
-    else:
-        return "#64748b"   # gris — temporada baja
+    def color_por_valor(v):
+        if v >= 1.6:
+            return "#022A6F"
+        elif v >= 1.5:
+            return "#2796B7"
+        elif v >= 1.4:
+            return "#629D3E"
+        else:
+            return "#64748b"
 
-colores_bar = [color_por_valor(v) for v in valores]
+    colores_bar = [color_por_valor(v) for v in valores]
 
-fig_bar = go.Figure(go.Bar(
-    x=meses, y=valores,
-    marker_color=colores_bar,
-    text=[f"${v}B" for v in valores],
-    textposition="outside"
-))
-fig_bar.update_layout(
-    yaxis_title="Valor estimado (USD Billions)",
-    height=400
-)
-st.plotly_chart(fig_bar, use_container_width=True)
+    fig_bar = go.Figure(go.Bar(
+        x=meses, y=valores,
+        marker_color=colores_bar,
+        text=[f"${v}B" for v in valores],
+        textposition="outside"
+    ))
+    fig_bar.update_layout(
+        yaxis_title="Valor estimado (USD Billions)",
+        height=400
+    )
+    st.plotly_chart(fig_bar, use_container_width=True)
+
+    st.info("**Implicación CL Circular:** Q1 (ene–abr) concentra 85% de embarques anuales de aguacate. Onboarding crítico: sep–dic 2025.")
