@@ -26,8 +26,6 @@ def show_executive():
             <li><b>Predictibilidad:</b> MAPE 8.89% (menor riesgo operacional vs HS07: 21.52%)</li>
             <li><b>Volumen concentrado:</b> 100,000+ embarques aguacate/año</li>
             <li><b>Geografía focalizada:</b> Michoacán/Jalisco → Laredo/Nogales</li>
-            <li><b>ROI demostrable:</b> Pérdida por temperatura = $5–15K/camión vs sensor $50–150</li>
-            <li><b>Compliance pressure:</b> USDA/FSMA enforcement creciente</li>
             <li><b>Timing:</b> Pico Q1 (ene–abr) = 85% embarques anuales</li>
         </ul>
         <p><b>Meta Año 1:</b> 1,500–2,000 sensores · 5–10% penetración aguacate · Revenue $750K–$1.5M USD</p>
