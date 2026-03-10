@@ -1,4 +1,7 @@
 streamlit>=1.37
 pandas
-plotly
 numpy
+plotly
+pillow
+statsmodels
+openpyxl
