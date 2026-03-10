@@ -12,7 +12,7 @@ def show_market():
         labels=["HS08 Frutas", "HS07 Verduras", "Otros Perecederos", "HS06 Flores"],
         values=[42, 36, 21, 1],
         hole=0.4,
-        marker_colors=["#38bdf8", "#f97316", "#64748b", "#ec4899"]
+        marker_colors=["#022A6F", "#2796B7", "#64748b", "#629D3E"]
     )])
     fig_pie.update_layout(
         title="Participación por Capítulo HS — Mercado $28–30B USD",
