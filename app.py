@@ -70,35 +70,26 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header con imagen de fondo + overlay y texto ---
-st.markdown(
-    """
-    <div style="
-        position: relative;
-        margin-bottom: 1.5rem;
-        border-radius: 18px;
-        overflow: hidden;
-        height: 220px;
-        background-image: url('ss.jpg');
-        background-size: cover;
-        background-position: center;
-    ">
-        <div style="
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(
-                90deg,
-                rgba(15, 23, 42, 0.88),
-                rgba(15, 23, 42, 0.35),
-                rgba(15, 23, 42, 0.05)
-            );
-        "></div>
+# --- Header: imagen banner + texto ---
+banner = Image.open("ss.jpg")
 
+# Contenedor ancho
+col_banner = st.container()
+with col_banner:
+    st.image(
+        banner,
+        use_column_width=True,
+    )
+    # Texto encima, simulando overlay con fondo semitransparente
+    st.markdown(
+        """
         <div style="
-            position: absolute;
-            top: 36px;
-            left: 40px;
-            right: 40px;
+            margin-top: -120px;
+            margin-bottom: 60px;
+            padding: 24px 40px;
+            background: linear-gradient(90deg, rgba(15,23,42,0.85), rgba(15,23,42,0.35));
+            border-bottom-left-radius: 18px;
+            border-bottom-right-radius: 18px;
             color: #F9FAFB;
         ">
             <div style="font-size: 1.25rem; font-weight: 650; margin-bottom: 8px;">
@@ -108,11 +99,9 @@ st.markdown(
                 Análisis de Expansión y Estrategia de Entrada · México → USA · HS06/07/08
             </div>
         </div>
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
-
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 # --- Navegación en Sidebar ---
