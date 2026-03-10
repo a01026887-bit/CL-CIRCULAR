@@ -101,14 +101,15 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
 
 seccion = st.sidebar.radio(
-    label="",
+    label="Seccion",
+    label_visibility="hidden",
     options=[
-        " Resumen Ejecutivo",
-        " Panorama de Mercado",
-        " Actores Clave",
-        " Corredores Logísticos",
-        " Cadena Fría y Cumplimiento",
-        " Pronóstico Series de Tiempo",
+        "Resumen Ejecutivo",
+        "Panorama de Mercado",
+        "Actores Clave",
+        "Corredores Logisticos",
+        "Cadena Fria y Cumplimiento",
+        "Pronostico Series de Tiempo",
     ],
 )
 
@@ -116,16 +117,16 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("**Mercado:** México → USA")
 st.sidebar.markdown("**Actualizado:** Marzo 2026")
 
-# --- Enrutador de secciones ---
-if seccion == " Resumen Ejecutivo":
+# --- Enrutador ---
+if seccion == "Resumen Ejecutivo":
     show_executive()
-elif seccion == " Panorama de Mercado":
+elif seccion == "Panorama de Mercado":
     show_market()
-elif seccion == " Actores Clave":
+elif seccion == "Actores Clave":
     show_players()
-elif seccion == " Corredores Logísticos":
+elif seccion == "Corredores Logisticos":
     show_corridors()
-elif seccion == " Cadena Fría y Cumplimiento":
+elif seccion == "Cadena Fria y Cumplimiento":
     show_coldchain()
-elif seccion == " Pronostico Series de Tiempo":
+elif seccion == "Pronostico Series de Tiempo":
     show_timeseries()
