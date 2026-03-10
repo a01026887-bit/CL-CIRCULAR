@@ -1,4 +1,7 @@
 import streamlit as st
+from PIL import Image
+
+import streamlit as st
 
 # --- Configuración de página ---
 st.set_page_config(
@@ -93,17 +96,12 @@ st.image(
 # --- Navegación en Sidebar ---
 from PIL import Image
 
-logo = Image.open("logo_cl_circular.png")
-
+logo_img = Image.open("logo_cl_circular.png")
 st.sidebar.image(
-    logo,
+    logo_img,
     use_column_width=False,
     width=130,
 )
-st.sidebar.markdown("---")
-st.sidebar.markdown("### NAVEGACIÓN")
-
-
 st.sidebar.markdown("---")
 st.sidebar.markdown("### NAVEGACIÓN")
 
