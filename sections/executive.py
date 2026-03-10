@@ -18,10 +18,10 @@ def show_executive():
 
     # --- Recomendación Estratégica ---
     st.markdown("""
-    <div style="background: linear-gradient(135deg, #0284c7, #38bdf8);
+    <div style="background: linear-gradient(135deg, #031A49, #031A49);
                 padding: 2rem; border-radius: 12px; color: white; margin-bottom: 1.5rem;">
-        <h2 style="color:white;">🎯 Recomendación Estratégica para CL Circular</h2>
-        <h3 style="color:#f0f9ff;">PRIORIDAD #1: HS08 (FRUTAS) — AGUACATE COMO BEACHHEAD</h3>
+        <h2 style="color:white;"> Recomendación Estratégica para CL Circular</h2>
+        <h3 style="color:#f0f9ff;">PRIORIDAD #1: HS08 (FRUTAS) — AGUACATE </h3>
         <ul>
             <li><b>Predictibilidad:</b> MAPE 8.89% (menor riesgo operacional vs HS07: 21.52%)</li>
             <li><b>Volumen concentrado:</b> 100,000+ embarques aguacate/año</li>
