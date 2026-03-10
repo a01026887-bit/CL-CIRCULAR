@@ -70,7 +70,7 @@ from sections.corridors import show_corridors
 from sections.coldchain import show_coldchain
 
 
-# --- Header con imagen de fondo real + overlay y texto ---
+# --- Header con imagen de fondo + overlay y texto ---
 st.markdown(
     """
     <div style="
@@ -83,14 +83,17 @@ st.markdown(
         background-size: cover;
         background-position: center;
     ">
-        <!-- Capa oscura degradada para contraste -->
         <div style="
             position: absolute;
             inset: 0;
-            background: linear-gradient(90deg, rgba(15,23,42,0.88), rgba(15,23,42,0.35), rgba(15,23,42,0.05));
+            background: linear-gradient(
+                90deg,
+                rgba(15, 23, 42, 0.88),
+                rgba(15, 23, 42, 0.35),
+                rgba(15, 23, 42, 0.05)
+            );
         "></div>
 
-        <!-- Texto sobre la imagen -->
         <div style="
             position: absolute;
             top: 36px;
